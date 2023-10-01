@@ -6,7 +6,7 @@
         <!-- Nested row for non-featured blog posts-->
         <div class="row">
             @foreach ($posts as $post)
-                <div class="col-lg-6">
+                <div class="col-lg-4 col-md-6">
                     <!-- Blog post-->
                     <div class="card mb-4">
                         <a href=""><img class="card-img-top" src="{{ url('uploads/thumbnail', $post->thumbnail) }}"
@@ -23,7 +23,8 @@
                             <h2 class="card-title h4 mt-2"><a class="text-decoration-none text-dark fw-normal "
                                     href="{{ route('post.details', $post->slug) }}">{{ $post->title }}</a></h2>
                             <p class="card-text">{!! Str::limit($post->content, 100) !!}</p>
-                            <a class="btn btn-primary" href="{{ route('post.details', $post->slug) }}">Read more →</a>
+                            <a class="btn text-white" href="{{ route('post.details', $post->slug) }}"
+                                style="background:#FF2900">Read more →</a>
                         </div>
                     </div>
                 </div>

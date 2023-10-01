@@ -6,10 +6,17 @@
 
 <header class="py-5 bg-light border-bottom mb-4">
     <div class="container">
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Type keyword to search..."
+                aria-label="Type keyword to search..." aria-describedby="button-search"
+                style="border-color:#FF2900 !important; box-shadow:none" />
+            <button class="btn text-white" style="background:#FF2900" id="button-search" type="button"><i
+                    class="fas fa-search"></i></button>
+        </div>
         <div class="text-center my-5">
             <h1 class="fw-bolder"><a class="nav-link" href="{{ route('home') }}">Welcome to Blog</a></h1>
-            <div class="d-lg-flex justify-content-center align-items-center">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+            <div class="d-md-flex justify-content-md-center align-items-md-center">
+                <ul class="navbar-nav mb-lg-0">
                     <li class="nav-item me-2"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
                 </ul>
                 <div class="dropdown">

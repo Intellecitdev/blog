@@ -5,18 +5,7 @@
         ->get();
 @endphp
 <div class="col-lg-4">
-    <!-- Search widget-->
-    <div class="card mb-4">
-        <div class="card-header">Search</div>
-        <div class="card-body">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Enter search term..."
-                    aria-label="Enter search term..." aria-describedby="button-search" />
-                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
-            </div>
-        </div>
-    </div>
-    <div>
+    <div class="mt-5">
         @foreach ($posts as $post)
             <div class="card mb-5">
                 <div class="row g-0">
@@ -48,8 +37,8 @@
                 <div class="col-sm-6">
                     <ul class="list-unstyled mb-0">
                         @foreach ($categories as $category)
-                            <li><a href="{{ route('category.details', $category->slug) }}"
-                                    class="text-decoration-none">{{ $category->name }}</a>
+                            <li><a href="{{ route('category.details', $category->slug) }}" class="text-decoration-none"
+                                    style="color:#FF2900">{{ $category->name }}</a>
                             </li>
                         @endforeach
                     </ul>

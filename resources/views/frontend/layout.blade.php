@@ -12,11 +12,13 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ url('/frontend/css/styles.css') }}" rel="stylesheet" />
+    {{-- font awesome cdn --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
     <!-- Responsive navbar-->
-    {{-- @include('frontend.fixed.nav') --}}
+    @include('frontend.fixed.nav')
     <!-- Page header with logo and tagline-->
     @include('frontend.fixed.header')
     <!-- Page content-->
