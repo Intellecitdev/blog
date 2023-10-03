@@ -9,7 +9,11 @@
     <meta name="author" content="@yield('author')" />
     <title>@yield('title')</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="shortcut icon" href="https://www.chinabazarb2b.com/img/frontend/brand/favicon-32x32.png"
+        type="image/x-icon" sizes="32x32">
+    <link rel="icon" href="https://www.chinabazarb2b.com/img/frontend/brand/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.chinabazarb2b.com/img/frontend/brand/favicon-180x180.png">
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ url('/frontend/css/styles.css') }}" rel="stylesheet" />
     {{-- font awesome cdn --}}

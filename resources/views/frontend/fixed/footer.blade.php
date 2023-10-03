@@ -14,7 +14,7 @@
                             <p class="ms-4">
                                 <b>Madina (7th floor)</b>
                                 <br>
-                                <span>Plot no:02. Mirpur-1, Dhaka 1216</span>
+                                <span>Plot no:02. Mirpur-1, dhaka 1216</span>
                             </p>
                         </li>
                         <li class=" d-flex  align-items-center" style="list-style:none;margin-bottom:15px">
@@ -51,21 +51,21 @@
 
                 @php
                     $whoWe = [
-                        ['name' => 'About Us', 'link' => '#'],
-                        ['name' => 'Contact Us', 'link' => '#'],
+                        ['name' => 'About Us', 'link' => 'about-us'],
+                        ['name' => 'Contact Us', 'link' => 'contact-us'],
                         [
                             'name' => "Privacy
                     Policy",
-                            'link' => '#',
+                            'link' => 'privacy-policy',
                         ],
-                        ['name' => 'Terms & Conditions', 'link' => '#'],
+                        ['name' => 'Terms & Conditions', 'link' => 'terms-conditions'],
                         [
                             'name' => "Return and Refund
                     Policy",
-                            'link' => '#',
+                            'link' => 'return-and-refund-policy',
                         ],
-                        ['name' => 'Secured Payment', 'link' => '#'],
-                        ['name' => 'Transparency', 'link' => '#'],
+                        ['name' => 'Secured Payment', 'link' => 'secured-payment'],
+                        ['name' => 'Transparency', 'link' => 'transparency'],
                     ];
                 @endphp
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -75,7 +75,7 @@
 
                     @foreach ($whoWe as $menu)
                         <p>
-                            <a href="{{ $menu['link'] }}"
+                            <a href="https://www.chinabazarb2b.com/{{ $menu['link'] }}"
                                 class="text-reset text-decoration-none">{{ $menu['name'] }}</a>
                         </p>
                     @endforeach
@@ -85,31 +85,31 @@
                     $usefulLinks = [
                         [
                             'name' => 'How To Buy',
-                            'link' => '#',
+                            'link' => 'how-to-buy',
                         ],
                         [
                             'name' => 'Shipping & Delivery',
-                            'link' => '#',
+                            'link' => 'shipping-and-delivery',
                         ],
                         [
                             'name' => 'Shipping Charge List',
-                            'link' => '#',
+                            'link' => 'shipping-charge-list',
                         ],
                         [
                             'name' => 'Custom & Shipping Charge',
-                            'link' => '#',
+                            'link' => 'custom-and-shipping-charge',
                         ],
                         [
                             'name' => 'Delivery Charges',
-                            'link' => '#',
+                            'link' => 'delivery-charges',
                         ],
                         [
                             'name' => 'Minimum Order Quantity',
-                            'link' => '#',
+                            'link' => 'minimum-order-quantity',
                         ],
                         [
                             'name' => 'Prohibited Items',
-                            'link' => '#',
+                            'link' => 'prohibited-items',
                         ],
                     ];
                 @endphp
@@ -119,7 +119,7 @@
                     </h6>
                     @foreach ($usefulLinks as $menu)
                         <p>
-                            <a href="{{ $menu['link'] }}"
+                            <a href="https://www.chinabazarb2b.com/{{ $menu['link'] }}"
                                 class="text-reset text-decoration-none">{{ $menu['name'] }}</a>
                         </p>
                     @endforeach
@@ -129,23 +129,23 @@
                     $customer = [
                         [
                             'name' => 'Account',
-                            'link' => '#',
+                            'link' => 'account',
                         ],
                         [
                             'name' => 'Special Offer',
-                            'link' => '#',
+                            'link' => 'special-offer',
                         ],
                         [
                             'name' => 'Wish List',
-                            'link' => '#',
+                            'link' => 'wishlist',
                         ],
                         [
                             'name' => 'Cart',
-                            'link' => '#',
+                            'link' => 'shopping-cart',
                         ],
                         [
                             'name' => 'FAQ',
-                            'link' => '#',
+                            'link' => 'fags',
                         ],
                     ];
                 @endphp
@@ -155,7 +155,7 @@
                     </h6>
                     @foreach ($customer as $menu)
                         <p>
-                            <a href="{{ $menu['link'] }}"
+                            <a href="https://www.chinabazarb2b.com/{{ $menu['link'] }}"
                                 class="text-reset text-decoration-none">{{ $menu['name'] }}</a>
                         </p>
                     @endforeach

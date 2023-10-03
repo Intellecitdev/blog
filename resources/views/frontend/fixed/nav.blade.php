@@ -1,5 +1,8 @@
-<nav class="navbar navbar-expand-lg " style="background:#FF2900">
+<nav class="navbar navbar-expand-lg " style="background:#FFF">
     <div class="container">
-        <a class="navbar-brand text-white" href="{{ route('home') }}">ChinaBazarB2B Blog</a>
+        <a href="{{ route('home') }}" class="navbar-brand">
+            <img class="img-fluid" src="{{ url('images/logo.png') }}" alt="China Bazar Blog" width="148" height="50">
+        </a>
+        <p style="color:#FF2900">ChinaBazarB2B Blog</p>
     </div>
 </nav>

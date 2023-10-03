@@ -26,4 +26,10 @@ class HomeController extends Controller
         $relatedPost = Post::where('category_id', $category->id)->where('id', '!=', $post->id)->get();
         return view('frontend.pages.postDetail', compact('post', 'relatedPost'));
     }
+    public function postSearch()
+    {
+        $search = request()->search;
+        $posts = Post::where('title', 'like', "%$search%")->paginate(10);
+        return view('frontend.pages.categoryDetails', compact('posts'));
+    }
 }

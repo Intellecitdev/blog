@@ -62,7 +62,10 @@ class PostController extends Controller
 
         if (!$request->slug) {
             $data["slug"] = Str::slug($request->title);
+        } else {
+            $data["slug"] = Str::slug($request->slug, '-');
         }
+
         if ($request->hasFile("thumbnail")) {
             $file = $request->file("thumbnail");
             $fileName = time() . "." . $file->getClientOriginalExtension();
@@ -135,6 +138,8 @@ class PostController extends Controller
 
         if (!$request->slug) {
             $data["slug"] = Str::slug($request->title);
+        } else {
+            $data["slug"] = Str::slug($request->slug, '-');
         }
         $data["thumbnail"] = $post->thumbnail;
         if ($request->hasFile("thumbnail")) {
@@ -143,7 +148,7 @@ class PostController extends Controller
             $file->move(public_path("uploads/thumbnail"), $fileName);
             $data["thumbnail"] = $fileName;
         }
-        $post = $post->update($data);
+        $post->update($data);
         if ($post) {
             toastr()->success("Post updated successfully");
             return redirect()->route("posts.index");

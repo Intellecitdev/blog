@@ -10,7 +10,7 @@
             <div class="card-body">
                 <div class="small text-muted my-3"><a href="{{ route('category.details', $post->category->slug) }}"
                         class="text-decoration-none text-white rounded me-1"
-                        style="display:inline-block; background:#6610f2; padding: 2px 8px; ">{{ $post->category->name }}</a>
+                        style="display:inline-block; background:#FF2900; padding: 2px 8px; ">{{ $post->category->name }}</a>
                     {{ now()->parse($post->posted_at)->format('d F Y') }}</div>
                 <h2 class="card-title">{{ $post->title }}</h2>
                 <p class="card-text">
