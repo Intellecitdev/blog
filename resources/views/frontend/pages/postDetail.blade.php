@@ -12,7 +12,7 @@
                         class="text-decoration-none text-white rounded me-1"
                         style="display:inline-block; background:#FF2900; padding: 2px 8px; ">{{ $post->category->name }}</a>
                     {{ now()->parse($post->posted_at)->format('d F Y') }}</div>
-                <h2 class="card-title">{{ $post->title }}</h2>
+                <h1 class="card-title">{{ $post->title }}</h1>
                 <p class="card-text">
                     {!! $post->content !!}
                 </p>
@@ -26,11 +26,11 @@
                 @foreach ($relatedPost as $post)
                     <div class="col-md-4 ">
                         <div class="card text-bg-secondary">
-                            <a href="{{ route('post.details', $post->slug) }}">
+                            <a href="{{ route('post.details', $post->slug) }}" class="text-decoration-none">
                                 <img src="{{ url('/uploads/thumbnail', $post->thumbnail) }}" class="card-img"
                                     alt="{{ $post->title }}">
-                                <div class="card-img-overlay">
-                                    <div class="d-flex flex-row justify-content-center align-items-center">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-white">
                                         <h5 class="card-title">{{ $post->title }}</h5>
                                         <p class="card-text">
                                             <small>{{ now()->parse($post->posted_at)->format('d F Y') }}</small>
