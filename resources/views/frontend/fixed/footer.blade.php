@@ -35,13 +35,13 @@
                             </p>
                         </li>
                         <li class="list-unstyled">
-                            <a href="" class="text-decoration-none me-4 text-reset">
+                            <a href="https://www.facebook.com/chinabazarb2b" class="text-decoration-none me-4 text-reset" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="" class="text-decoration-none me-4 text-reset">
+                            <a href="https://www.instagram.com/china_bazar_b2b" class="text-decoration-none me-4 text-reset" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="" class="text-decoration-none me-4 text-reset">
+                            <a href="https://www.youtube.com/channel/UCacdF2Pz0-0u7cjgJ7ZTq9Q" target="_blank" class="text-decoration-none me-4 text-reset">
                                 <i class="fab fa-youtube"></i>
                             </a>
 

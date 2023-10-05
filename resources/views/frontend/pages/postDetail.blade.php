@@ -25,13 +25,13 @@
                 @endif
                 @foreach ($relatedPost as $post)
                     <div class="col-md-4 ">
-                        <div class="card text-bg-secondary">
+                        <div class="card text-bg-secondary" style="background-color:#FF2900 !important" >
                             <a href="{{ route('post.details', $post->slug) }}" class="text-decoration-none">
                                 <img src="{{ url('/uploads/thumbnail', $post->thumbnail) }}" class="card-img"
                                     alt="{{ $post->title }}">
                                 <div class="card-body">
-                                    <div class="d-flex flex-column justify-content-center align-items-center text-white">
-                                        <h5 class="card-title">{{ $post->title }}</h5>
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-black">
+                                        <h5 class="card-title" >{{ $post->title }}</h5>
                                         <p class="card-text">
                                             <small>{{ now()->parse($post->posted_at)->format('d F Y') }}</small>
                                         </p>
