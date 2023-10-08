@@ -30,7 +30,7 @@
                                 <img src="{{ url('/uploads/thumbnail', $post->thumbnail) }}" class="card-img"
                                     alt="{{ $post->title }}">
                                 <div class="card-body">
-                                    <div class="d-flex flex-column justify-content-center align-items-center text-black">
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-white">
                                         <h5 class="card-title" >{{ $post->title }}</h5>
                                         <p class="card-text">
                                             <small>{{ now()->parse($post->posted_at)->format('d F Y') }}</small>
