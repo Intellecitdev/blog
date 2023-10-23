@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="keywords" content="@yield('meta_keywords')" />
+    {{-- canonical tag --}}
+    <link rel="canonical" href="{{ url()->current() }}" />
     <meta name="description" content="@yield('meta_description')" />
     <meta name="author" content="@yield('author')" />
     <title>@yield('title')</title>
