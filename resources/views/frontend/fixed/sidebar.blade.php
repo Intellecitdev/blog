@@ -5,7 +5,11 @@
         ->get();
 @endphp
 <div class="col-lg-4">
-    <div class="mt-5">
+    {{-- related post --}}
+    <div class="card mt-5 mb-3">
+    <div class="card-header" style="border: none">Related Post</div>
+    </div>
+    <div class="">
         @foreach ($posts as $post)
             <div class="card mb-5">
                 <div class="row g-0">
