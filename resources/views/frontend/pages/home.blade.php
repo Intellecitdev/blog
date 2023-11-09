@@ -5,7 +5,7 @@
     <div class="col-lg-8">
         <!-- Nested row for non-featured blog posts-->
         <div class="row">
-            @foreach ($posts as $post)
+            @foreach ($posts as $post) 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <!-- Blog post-->
                     <div class="card mb-4">
@@ -18,7 +18,7 @@
                                     class="text-decoration-none text-white rounded"
                                     style="display:inline-block; background:#FF2900; padding: 2px 8px; ">{{ $post->category->name }}</a>
                                 <span class="small text-muted">
-                                    {{ now()->parse($post->porsted_at)->format('d, F Y') }}
+                                    {{ \Carbon\Carbon::parse($post->posted_at)->format('d, M Y') }}
                                 </span>
                             </div>
                             <h2 class="card-title h4 mt-2"><a class="text-decoration-none text-dark fw-normal "

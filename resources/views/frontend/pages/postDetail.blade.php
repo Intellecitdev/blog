@@ -11,7 +11,7 @@
                 <div class="small text-muted my-3"><a href="{{ route('category.details', $post->category->slug) }}"
                         class="text-decoration-none text-white rounded me-1"
                         style="display:inline-block; background:#FF2900; padding: 2px 8px; ">{{ $post->category->name }}</a>
-                    {{ now()->parse($post->posted_at)->format('d F Y') }}</div>
+                    {{ now()->parse($post->posted_at)->format('d M Y') }}</div>
                 <h2 class="card-title">{{ $post->title }}</h2>
                 <p class="card-text">
                     {!! $post->content !!}
@@ -24,13 +24,13 @@
                     <p class="display-4">Related Post</p>
                 @endif
                 @foreach ($relatedPost as $post)
-                    <div class="col-md-4 ">
-                        <div class="card text-bg-secondary">
-                            <a href="{{ route('post.details', $post->slug) }}">
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        <div class="card text-bg-secondary" style="background-color:#FF2900 !important">
+                            <a href="{{ route('post.details', $post->slug) }}" class="text-decoration-none">
                                 <img src="{{ url('/uploads/thumbnail', $post->thumbnail) }}" class="card-img"
                                     alt="{{ $post->title }}">
-                                <div class="card-img-overlay">
-                                    <div class="d-flex flex-row justify-content-center align-items-center">
+                                <div class="card-body">
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-white">
                                         <h5 class="card-title">{{ $post->title }}</h5>
                                         <p class="card-text">
                                             <small>{{ now()->parse($post->posted_at)->format('d F Y') }}</small>
@@ -44,7 +44,7 @@
             </div>
         @endpush
     </div>
-    {{-- @dd($post) --}}
+
     <script type="application/ld+json">
         {
         "@context": "{{ url('/') }}",
