@@ -46,15 +46,15 @@
     </div>
 
     <script type="application/ld+json">
-        {
-        "@context": "{{ url('/') }}",
+    {
+        "@context": "https://www.chinabazarb2b.com/blog/",
         "@type": "BlogPosting",
         "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ url()->current() }}"
-  },
+            "@type": "WebPage",
+            "@id": "{{ url()->current() }}"
+        },
         "headline": "{{ $post->title }}",
-          "description": "{!! $post->content !!}",
+        "description": "{!! $post->content !!}",
         "image": "{{ url('/uploads/thumbnail', $post->thumbnail) }}",
         "author": {
             "@type": "Person",
@@ -62,14 +62,14 @@
         },
         "publisher": {
             "@type": "Organization",
-            "name": "",
+            "name": "Chinabazarb2b Blog",
             "logo": {
-            "@type": "ImageObject",
-            "url": ""
+                "@type": "ImageObject",
+                "url": "https://www.chinabazarb2b.com/blog/images/logo.png"
             }
         },
         "datePublished": "{{ now()->parse($post->posted_at)->format('d F Y') }}",
-          "dateModified": "{{ now()->parse($post->updated_at)->format('d F Y') }}",
-        }
-</script>
+        "dateModified": "{{ now()->parse($post->updated_at)->format('d F Y') }}"
+    }
+    </script>
 @endsection
